@@ -12,7 +12,7 @@ Then run the set of commands to cp the pexpect adn ptyprocess folders:
 find / -name 'pexpect' 2>/dev/null
 cp -r /PATH .
 
-find / -name 'ptyprocess 2>/dev/null
+find / -name 'ptyprocess' 2>/dev/null
 cp -r /PATH .
 ```
 
