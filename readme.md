@@ -1,5 +1,11 @@
 <h2>Process for RES</h2>
 
+--------------------------------------------------------------------
+Target box need to meet 2 requirements for this script to work.
+1) Current user needs to be able to run the su command.
+2) Python3 needs to be installed.
+--------------------------------------------------------------------
+
 First you will need to make sure you have pexpect installed locally:
 
 ```
