@@ -1,4 +1,5 @@
 import pexpect
+import ptyprocess
 import threading
 import argparse
 
@@ -8,7 +9,7 @@ def su_test(password, username):
     if found.is_set():
         return
 
-    child = pexpect.spawn(f'su -c "whoami" {username}')
+    child = pexpect.spawn('su -c "whoami" {}'.format(username))
     child.expect('Password:')
     child.sendline(password)
     child.expect(pexpect.EOF)
