@@ -1,9 +1,12 @@
 <h2>Process for RES</h2>
 
+Link to Tryhackme Res: https://tryhackme.com/room/res
+
 --------------------------------------------------------------------
-Target box need to meet 2 requirements for this script to work.
+Target box need to meet 3 requirements for this script to work.
 1) Current user needs to be able to run the su command.
 2) Python3 needs to be installed.
+3) tar is installed on target machine.
 --------------------------------------------------------------------
 
 First you will need to make sure you have pexpect installed locally:
